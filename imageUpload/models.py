@@ -8,3 +8,8 @@ class PostImage(models.Model):
    image = models.ImageField(upload_to="post/%Y/%m/%d")
    def __str__(self):
        return '[{}] {}'.format(self.post, self.image)
+
+class Image(models.Model):
+    image = models.ImageField(upload_to="post/%Y/%m/%d")
+    def __str__(self):
+       return '[{}] {}'.format(self.image)
